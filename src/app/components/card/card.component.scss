@@ -40,7 +40,6 @@ img {
   //border-radius: 1rem;
   color: $gray-dark;
   padding: 0.5rem;
-  text-transform: lowercase;
 }
 
 .btn--block {
@@ -74,6 +73,7 @@ img {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  min-height: 100%;
   &:hover {
     .card__image {
       filter: contrast(100%);

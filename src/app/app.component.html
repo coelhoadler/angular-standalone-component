@@ -1,5 +1,39 @@
-Componente STANDALONE root!
+<!-- Componente STANDALONE root!
 <br />
 <hr>
 Outro componente STANDALONE:
-<app-dummy name="Adlerrrr"></app-dummy>
+<app-dummy name="Adlerrrr"></app-dummy> -->
+
+<!-- Content Projection -->
+
+<section class="card-grid">
+    <div class="card-grid-item">
+        <app-card title="Card" imageName="river">
+            <app-card-header>
+                <h1>I'm header</h1>
+            </app-card-header>
+
+            <div *appCardMainContent>
+                This defines the ability for a flex item to grow if necessary. It accepts a unitless value
+                that serves as a proportion. It dictates what amount of the available space inside the flex container the
+                item should take up.
+            </div>
+
+            <app-card-footer>
+                <button class="btn btn--block card__btn">Like</button>
+            </app-card-footer>
+        </app-card>
+    </div>
+    <div class="card-grid-item">
+        <app-card title="Card 2" imageName="flowers">
+            <app-card-header>
+                <h1>I'm header 2</h1>
+            </app-card-header>
+
+            <app-card-footer>
+                <button class="btn btn--block card__btn">Like</button>
+                <button class="btn btn--block card__btn">Dislike</button>
+            </app-card-footer>
+        </app-card>
+    </div>
+</section>
